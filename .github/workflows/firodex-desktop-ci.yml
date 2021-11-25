@@ -354,7 +354,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.artifact_name_zip }}
-          path: ./build/windows/bin.zip
+          path: ./bundled/windows/bin.zip
           retention-days: 7
 
       - name: Upload artifacts (Windows installer)
@@ -362,7 +362,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: ${{ env.artifact_name_installer }}
-          path: ./build/windows/${{ env.DEX_PROJECT_NAME }}_installer.exe
+          path: ./bundled/windows/${{ env.DEX_PROJECT_NAME }}_installer.exe
           retention-days: 7
           
                
