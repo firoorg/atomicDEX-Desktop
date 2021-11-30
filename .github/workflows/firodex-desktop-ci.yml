@@ -288,6 +288,7 @@ jobs:
           #Invoke-WebRequest -Uri https://report.ci/upload.py -OutFile upload.py
           #python upload.py --sha $(git rev-parse HEAD) -n "[Doctest Windows]" --include='${{ env.DEX_PROJECT_NAME }}-tests-result.xml' --framework=doctest --merge ".*"
 
+
       - name: Upload env variable for artifacts (Linux)
         if: runner.os == 'Linux'
         run: |
