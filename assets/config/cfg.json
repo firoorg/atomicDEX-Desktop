@@ -90,12 +90,6 @@
     "USD",
     "BTC",
     "FIRO",
-    "ETH",
-    "BNB",
-    "FIRO-BEP20",
-    "BUSD-BEP20",
-    "USDT-BEP20",
-    "USDC-BEP20",
-    "DAI-BEP20"
+    "ETH"
   ]
 }
