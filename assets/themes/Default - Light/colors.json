@@ -80,11 +80,11 @@
 
     "loginWalletIconColorStart": "#9B1C2E",
     "loginWalletIconColorEnd": "#EE5C78",
-    "sidebarBgColor": "#FCFCFCFF",
-    "sidebarVersionTextColor": "#110202FF",
-    "sidebarCursorStartColor": "#F6D7DBFF",
+    "sidebarBgColor": "#FCFCFCFFFF",
+    "sidebarVersionTextColor": "#110202FFFF",
+    "sidebarCursorStartColor": "#F6D7DBFFFF",
     "sidebarCursorEndColor": "#FFFFFFFF",
-    "sidebarLineTextHovered": "#7C1624",
+    "sidebarLineTextHovered": "#7C1624FF",
     "sidebarLineTextSelected": "#7C1624",
 
     "tradeBuyModeSelectorBackgroundColorStart": "#00C3AAFF",
@@ -96,8 +96,8 @@
     "okColor": "#00C058",
     "noColor": "#E52167",
 
-    "arrowUpColor": "#F85757",
-    "arrowDownColor": "#845FEF",
+    "arrowUpColor": "#F85757FF",
+    "arrowDownColor": "#845FEFFF",
 
     "lineSeparatorColor": "#65656542"
 }
