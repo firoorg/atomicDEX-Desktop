@@ -15,7 +15,7 @@ jobs:
 
   linux-release:
     name: Linux Build/Release
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -126,7 +126,7 @@ jobs:
 
   linux-debug:
     name: Linux Build/Debug
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
