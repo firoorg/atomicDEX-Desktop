@@ -11,6 +11,9 @@ on:
     - cron: '0 0 * * 1'
 
 env:
+  DEX_API: "mm2"
+  DEX_RPCPORT: 7783
+  DEX_RPC: "http://127.0.0.1:7783"
   DEX_PROJECT_NAME: "firodex"
   DEX_DISPLAY_NAME: "Firo Dex"
   DEX_COMPANY: "Firo"

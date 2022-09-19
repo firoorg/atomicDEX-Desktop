@@ -54,7 +54,7 @@ FloatingBackground
                 id: statusText
                 anchors.centerIn: parent
 
-                visible: clickable ? ! details ? false : (details.is_swap || !details.is_maker) : false
+                visible: clickable ? !details ? false : (details.is_swap || !details.is_maker) : false
                 font.pixelSize: getStatusFontSize(details.order_status)
                 color: !details ? Dex.CurrentTheme.foregroundColor : getStatusColor(details.order_status)
                 text_value: !details ? "" : visible ? getStatusStep(details.order_status) : ''
@@ -98,7 +98,7 @@ FloatingBackground
                         if (!details) return
 
                         BigNumber.config({ DECIMAL_PLACES: 8 })
-                        return new BigNumber(details.base_amount)toString(10)
+                        return new BigNumber(details.base_amount).toString(10)
                     }
                     privacy: is_placed_order
                     elide: Text.ElideRight
@@ -142,6 +142,7 @@ FloatingBackground
                         BigNumber.config({ DECIMAL_PLACES: 8 })
                         return new BigNumber(details.rel_amount).toString(10)
                     }
+
                     privacy: is_placed_order
                     elide: Text.ElideRight
                     maximumLineCount: 1
