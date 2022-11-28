@@ -7,6 +7,8 @@
     "secondBackgroundColor": "#F9F5F5FF",
     "backgroundColorDeep": "#F9F5F5FF",
 
+    "busyIndicatorColor": "#5A68E6FF",
+
     "buttonColorDisabled": "#D8E3F8",
     "buttonColorEnabled": "#F0F6F9",
     "buttonColorHovered": "#F0F6F9AA",
@@ -78,8 +80,9 @@
     "rangeSliderIndicatorBackgroundStartColor": "#EE5C78FF",
     "rangeSliderIndicatorBackgroundEndColor": "#EE5C78FF",
 
-    "loginWalletIconColorStart": "#9B1C2E",
-    "loginWalletIconColorEnd": "#EE5C78",
+    "userIconColorStart": "#9B1C2E",
+    "userIconColorEnd": "#EE5C78",
+    
     "sidebarBgColor": "#FCFCFCFF",
     "sidebarVersionTextColor": "#110202FF",
     "sidebarCursorStartColor": "#F6D7DBFF",
@@ -93,11 +96,16 @@
     "tradeSellModeSelectorBackgroundColorEnd": "#F48EA1FF",
     "tradeMarketModeSelectorNotSelectedBackgroundColor": "#89B6FF21",
 
-    "okColor": "#00C058",
-    "noColor": "#E52167",
+    "addressBookTagColors": ["#627EEAFF", "#FFD87AFF", "#F7931AFF"],
 
-    "arrowUpColor": "#F85757",
-    "arrowDownColor": "#845FEF",
+    "okColor": "#00C058FF",
+    "noColor": "#E52167FF",
+
+    "senderColorStart": "#F85757",
+    "receiverColorStart": "#845FEF",
+
+    "arrowUpColor": "#F85757FF",
+    "arrowDownColor": "#845FEFFF",
 
     "lineSeparatorColor": "#65656542"
 }
