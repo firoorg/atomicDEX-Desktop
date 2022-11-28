@@ -3,7 +3,7 @@ name: FiroDex-Desktop CI
 on:
   pull_request:
     types: [ opened, synchronize, reopened ]
-  push:FiroDEX
+  push:
     branches:
       - dev
       - master
