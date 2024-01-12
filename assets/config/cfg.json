@@ -1,6 +1,7 @@
 {
   "notification_enabled": true,
   "spamfilter_enabled": false,
+  "use_static_rpcpass": false,
   "current_currency": "USD",
   "current_fiat": "USD",
   "current_currency_sign": "$",
@@ -40,9 +41,13 @@
     "HUF": "Ft",
     "SEK": "kr",
     "KMD": "KMD",
+    "DOGE": "Ð",
+    "ETH": "⟠",
+    "ETH_ALT": "Ξ",
     "BTC": "₿",
     "BTC_ALT": "฿",
-    "LTC": "Ł"
+    "LTC": "Ł",
+    "FIRO": "FIRO"
   },
   "available_fiat": [
     "USD",
@@ -90,6 +95,9 @@
   "possible_currencies": [
     "USD",
     "BTC",
-    "KMD"
+    "KMD",
+    "LTC",
+    "DOGE",
+    "FIRO"
   ]
 }

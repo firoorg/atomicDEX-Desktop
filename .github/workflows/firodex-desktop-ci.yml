@@ -11,13 +11,18 @@ on:
     - cron: '0 0 * * 1'
 
 env:
-  DEX_API: "mm2"
-  DEX_RPCPORT: 7783
-  DEX_RPC: "http://127.0.0.1:7783"
+  DEX_API: "mm2_firo"
+  DEX_RPCPORT: 7653
+  DEX_RPC: "http://127.0.0.1:7653"
   DEX_PROJECT_NAME: "firodex"
   DEX_DISPLAY_NAME: "Firo Dex"
   DEX_COMPANY: "Firo"
+  DEX_VERSION: "0.7.0"
   DEX_WEBSITE: "https://firo.org/"
+  VCPKG_DEFAULT_BINARY_CACHE: ${{ github.workspace }}/b/vcpkg_cache
+  VCPKG_BINARY_SOURCES: clear;x-gha,readwrite
+  RUNVCPKG_VCPKG_ROOT: ${{ github.workspace }}\komodo-wallet-desktop\ci_tools_atomic_dex\vcpkg-repo
+  VCPKG_ROOT: ${{ github.workspace }}\komodo-wallet-desktop\ci_tools_atomic_dex\vcpkg-repo
 
 jobs:
 
@@ -51,13 +56,13 @@ jobs:
             host: 'linux'
 
           - name: osx-release
-            os: macos-11
+            os: macos-12
             qt: '5.15.2'
             type: 'Release'
             host: 'mac'
 
           - name: osx-debug
-            os: macos-11
+            os: macos-12
             qt: '5.15.2'
             type: 'Debug'
             host: 'mac'
@@ -79,6 +84,13 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           submodules: 'true'
+
+      - name: setup cache variables
+        uses: actions/github-script@v6
+        with:
+          script: |
+            core.exportVariable('ACTIONS_CACHE_URL', process.env.ACTIONS_CACHE_URL || '');
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
 
       - name: Setup Python
         uses: actions/setup-python@v4
