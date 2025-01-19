@@ -16,8 +16,8 @@ Widget
     readonly property string pair_volume_24hr: API.app.trading_pg.pair_volume_24hr
     readonly property string pair: atomic_qt_utilities.retrieve_main_ticker(left_ticker) + "/" + atomic_qt_utilities.retrieve_main_ticker(right_ticker)
 
-    margins: 10
-    spacing: 10
+    margins: 8
+    spacing: 8
     collapsable: false
 
     Header
@@ -54,7 +54,7 @@ Widget
         Layout.fillWidth: true
     }
 
-    DefaultText
+    DexLabel
     {
         id: volume_text
         visible: parseFloat(pair_volume_24hr) > 0
